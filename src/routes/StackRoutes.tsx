@@ -8,7 +8,7 @@ import { Home } from "@/app/Home";
 
 export type StackRouteList = {
   home: undefined;
-  product: undefined;
+  product: undefined | { id: string };
 };
 
 export type StackRoutesProps<T extends keyof StackRouteList> =
